@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Challenge Code</title>
+  <script type="text/javascript" src="interpolation.js"></script>
+  
+  <style>
+    .container{
+      padding: 25px;
+      margin: 25px;
+    }
+    h2{
+      color: blue;
+      font-family: Arial
+    }
+    .form-group{
+      font-family: Arial;
+    }
+    textarea{
+      margin-top: 5px;
+    }
+    label{
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h2>Task 1: Interpolation</h2>
+  <div>
+    <div>
+     <form>
+      <div class="form-group">
+        <label>Select a file (csv):</label>
+        <input type='file' accept='.csv' onchange='readCVSFile(event)'>
+      </div>
+      <br>
+      <div class="form-group" id="input-div" style="display:none;">
+        <label>Input file:</label>
+        <br>
+        <textarea id="input" rows="4" cols="50">...</textarea>
+      </div>
+      <br>
+      <div class="form-group" id="div-output" style="display:none;">
+        <label>Output Matrix:</label>
+        <br>
+        <textarea id="output-matrix" rows="4" cols="50">...
+        </textarea>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
